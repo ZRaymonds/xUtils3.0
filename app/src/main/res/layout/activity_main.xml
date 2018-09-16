@@ -16,7 +16,7 @@
             android:id="@+id/btn_getPic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get单张图片请求"
+            android:text="Get图片请求"
             android:textAllCaps="false"
             android:layout_weight="1"/>
 
@@ -45,11 +45,6 @@
 
     </LinearLayout>
 
-
-    <ImageView
-        android:id="@+id/iv_showImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
     <ScrollView
         android:layout_width="wrap_content"

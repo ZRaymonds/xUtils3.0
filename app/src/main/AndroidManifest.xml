@@ -22,6 +22,7 @@
         </activity>
         <activity android:name=".activity.DownLoadActivity" />
         <activity android:name=".activity.DatabaseActivity" />
+        <activity android:name=".activity.ImageActivity" />
     </application>
 
 </manifest>

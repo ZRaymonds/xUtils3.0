@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
     @ViewInject(R.id.btn_getPic)
     Button btn_getPic;
 
-    @ViewInject(R.id.iv_showImage)
-    ImageView iv_showImage;
+//    @ViewInject(R.id.iv_showImage)
+//    ImageView iv_showImage;
 
     @ViewInject(R.id.btn_getText)
     Button btn_getText;
@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
     private void onClick(View v){
         switch (v.getId()){
             case R.id.btn_getPic:
-                showImage();
+                Intent intent3 =new Intent(MainActivity.this,ImageActivity.class);
+                startActivity(intent3);
                 break;
             case R.id.btn_getText:
                 showText();
@@ -98,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void showImage() {
+   /* private void showImage() {
         String url="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536748154272&di=dbaea8aca35b83867afdec462bdcf3ac&imgtype=0&src=http%3A%2F%2Fi1.umei.cc%2Fuploads%2Ftu%2F201807%2F9999%2F95ec4d7f64.jpg";
         ImageOptions imageOptions = new ImageOptions.Builder()
                 .setFadeIn(true) //淡入效果
@@ -125,6 +126,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-    }
+    }*/
 
 }

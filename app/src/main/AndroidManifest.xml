@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.DownLoadActivity" />
-        <activity android:name=".activity.DatabaseActivity"></activity>
+        <activity android:name=".activity.DatabaseActivity" />
     </application>
 
 </manifest>

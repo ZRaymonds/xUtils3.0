@@ -14,6 +14,9 @@ public class PersonTable {
     @Column(name = "id",isId = true,autoGen = true)
     private int id;
 
+    @Column(name = "name")
+    private String name;
+
     @Column(name = "age")
     private int age;
 
@@ -21,7 +24,7 @@ public class PersonTable {
     private String sex;
 
     @Column(name = "salary")
-    private String salary;
+    private int salary;
 
     public int getId() {
         return id;
@@ -29,6 +32,14 @@ public class PersonTable {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getAge() {
@@ -47,11 +58,11 @@ public class PersonTable {
         this.sex = sex;
     }
 
-    public String getSalary() {
+    public int getSalary() {
         return salary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 
@@ -59,9 +70,10 @@ public class PersonTable {
     public String toString() {
         return "PersonTable{" +
                 "id=" + id +
+                ", name='" + name + '\'' +
                 ", age=" + age +
                 ", sex='" + sex + '\'' +
-                ", salary='" + salary + '\'' +
+                ", salary=" + salary +
                 '}';
     }
 }

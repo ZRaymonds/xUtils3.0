@@ -41,13 +41,16 @@ public class MainActivity extends AppCompatActivity {
     @ViewInject(R.id.tv_showText)
     TextView tv_showText;
 
+    @ViewInject(R.id.btn_database)
+    Button btn_database;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         x.view().inject(this);
     }
 
-    @Event(value = {R.id.btn_getPic,R.id.btn_getText,R.id.btn_downLoad})
+    @Event(value = {R.id.btn_getPic,R.id.btn_getText,R.id.btn_downLoad,R.id.btn_database})
     private void onClick(View v){
         switch (v.getId()){
             case R.id.btn_getPic:
@@ -59,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_downLoad:
                 Intent intent = new Intent(MainActivity.this,DownLoadActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.btn_database:
+                Intent intent2 = new Intent(MainActivity.this,DatabaseActivity.class);
+                startActivity(intent2);
                 break;
         }
     }

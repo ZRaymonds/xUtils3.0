@@ -8,12 +8,6 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/btn_createDB"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="创建数据库"/>
-
-    <Button
         android:id="@+id/btn_insert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
